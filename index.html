@@ -77,7 +77,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -244,6 +244,47 @@
 
       <div class="body-wrap">
   
+    <article id="post-今日启程，每日一篇成长博客，风雨兼程" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/17/今日启程，每日一篇成长博客，风雨兼程/" class="article-date">
+  	<time datetime="2016-08-17T15:19:15.846Z" itemprop="datePublished">2016-08-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-最近" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -403,78 +444,7 @@
 <li>search:搜索包</li>
 <li>update:更新项目的包</li>
 <li>uninstall:删除项目的包</li>
-<li></li>
 </ol>
-<p>1) <strong>安装jQuery到项目nodejs-bower</strong></p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower install jquery<br>bower jquery#<em>              not-cached git://github.com/components/jquery.git#</em><br>bower jquery#<em>                 resolve git://github.com/components/jquery.git#</em><br>bower jquery#<em>                download <a href="https://github.com/components/jquery/archive/2.0.3.tar.gz" target="_blank" rel="external">https://github.com/components/jquery/archive/2.0.3.tar.gz</a><br>bower jquery#</em>                 extract archive.tar.gz<br>bower jquery#*                resolved git://github.com/components/jquery.git#2.0.3<br>bower jquery#~2.0.3            install jquery#2.0.3</p>
-<p>jquery#2.0.3 bower_components\jquery<br>通过执行命令，我们可以看到jQuery的最新版本被下载，并安装到项目的bower_components\jquery目录</p>
-<p>查看bower_components/jquery目录，发现了3个文件。</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;ls bower_components/jquery -a<br>.  ..  .bower.json  component.json  jquery.js<br>同样地，我们的项目还需要d3的类库</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower install d3<br>bower d3#<em>                  not-cached git://github.com/mbostock/d3.git#</em><br>bower d3#<em>                     resolve git://github.com/mbostock/d3.git#</em><br>bower d3#<em>                    download <a href="https://github.com/mbostock/d3/archive/v3.2.8.tar.gz" target="_blank" rel="external">https://github.com/mbostock/d3/archive/v3.2.8.tar.gz</a><br>bower d3#</em>                     extract archive.tar.gz<br>bower d3#*                    resolved git://github.com/mbostock/d3.git#3.2.8<br>bower d3#~3.2.8                install d3#3.2.8</p>
-<p>d3#3.2.8 bower_components\d3<br>非常方便，下载并安装完成！</p>
-<p>2). 查看项目中已导入的类库</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower list<br>bower check-new     Checking for new versions of the project dependencies..<br>nodejs-bower#0.0.0 D:\workspace\javascript\nodejs-bower<br>├── d3#3.2.8<br>└── jquery#2.0.3<br>3). 安装bootstrap库，并查看依赖情况</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower install bootstrap<br>bower bootstrap#<em>               cached git://github.com/twbs/bootstrap.git#3.0.0-rc1<br>bower bootstrap#</em>             validate 3.0.0-rc1 against git://github.com/twbs/bootstrap.git#*<br>bower jquery#&gt;= 1.9.0           cached git://github.com/components/jquery.git#2.0.3<br>bower jquery#&gt;= 1.9.0         validate 2.0.3 against git://github.com/components/jquery.git#&gt;= 1.9.0<br>bower bootstrap#~3.0.0-rc1     install bootstrap#3.0.0-rc1</p>
-<p>bootstrap#3.0.0-rc1 bower_components\bootstrap<br>└── jquery#2.0.3</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower list<br>bower check-new     Checking for new versions of the project dependencies..<br>nodejs-bower#0.0.0 D:\workspace\javascript\nodejs-bower<br>├─┬ bootstrap#3.0.0-rc1 extraneous<br>│ └── jquery#2.0.3<br>├── d3#3.2.8<br>└── jquery#2.0.3<br>我们发现bootstrap，对jquery是有依赖的。</p>
-<p>4). 删除jQuery库，破坏依赖关系</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower uninstall jquery<br>bower conflict      bootstrap depends on jquery<br>Continue anyway? (y/n) y<br>bower uninstall     jquery</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower list<br>bower check-new     Checking for new versions of the project dependencies..<br>nodejs-bower#0.0.0 D:\workspace\javascript\nodejs-bower<br>├─┬ bootstrap#3.0.0-rc1 extraneous<br>│ └── jquery missing<br>├── d3#3.2.8<br>└── jquery missing<br>5). 安装低版本的jQuery，制造不版本兼容</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower install jquery#1.7.2<br>bower jquery#~2.0.3             cached git://github.com/components/jquery.git#2.0.3<br>bower jquery#~2.0.3           validate 2.0.3 against git://github.com/components/jquery.git#~2.0.3<br>bower jquery#&gt;= 1.9.0           cached git://github.com/components/jquery.git#2.0.3<br>bower jquery#&gt;= 1.9.0         validate 2.0.3 against git://github.com/components/jquery.git#&gt;= 1.9.0<br>bower jquery#1.7.2              cached git://github.com/components/jquery.git#1.7.2<br>bower jquery#1.7.2            validate 1.7.2 against git://github.com/components/jquery.git#1.7.2</p>
-<p>Unable to find a suitable version for jquery, please choose one:<br>    1) jquery#1.7.2 which resolved to 1.7.2<br>    2) jquery#~2.0.3 which resolved to 2.0.3 and has nodejs-bower as dependants<br>    3) jquery#&gt;= 1.9.0 which resolved to 2.0.3 and has bootstrap#3.0.0-rc1 as dependants</p>
-<p>Prefix the choice with ! to persist it to bower.json</p>
-<p>Choice: 1<br>bower jquery#1.7.2             install jquery#1.7.2</p>
-<p>jquery#1.7.2 bower_components\jquery</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower list<br>bower check-new     Checking for new versions of the project dependencies..<br>nodejs-bower#0.0.0 D:\workspace\javascript\nodejs-bower<br>├─┬ bootstrap#3.0.0-rc1 extraneous<br>│ └── jquery#1.7.2 incompatible with &gt;= 1.9.0 (2.0.3 available)<br>├── d3#3.2.8<br>└── jquery#1.7.2 incompatible with ~2.0.3 (2.0.3 available)<br>我们可以清楚的看到bower，很明确的告诉了我们，jquery和bootstrap是不兼容的，强大之处大家应该有所体会。</p>
-<p>6).升级jQuery，让版本兼容</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower update jquery<br>bower jquery#~2.0.3             cached git://github.com/components/jquery.git#2.0.3<br>bower jquery#~2.0.3           validate 2.0.3 against git://github.com/components/jquery.git#~2.0.3<br>bower jquery#&gt;= 1.9.0           cached git://github.com/components/jquery.git#2.0.3<br>bower jquery#&gt;= 1.9.0         validate 2.0.3 against git://github.com/components/jquery.git#&gt;= 1.9.0<br>bower jquery#~2.0.3            install jquery#2.0.3</p>
-<p>jquery#2.0.3 bower_components\jquery</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower list<br>bower check-new     Checking for new versions of the project dependencies..<br>nodejs-bower#0.0.0 D:\workspace\javascript\nodejs-bower<br>├─┬ bootstrap#3.0.0-rc1 extraneous<br>│ └── jquery#2.0.3<br>├── d3#3.2.8<br>└── jquery#2.0.3<br>多么智能，一键搞定，这才是高效的开发。</p>
-<p>7). 查看本地bower已经缓存的类库</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower cache list<br>bootstrap=git://github.com/twbs/bootstrap.git#3.0.0-rc1<br>d3=git://github.com/mbostock/d3.git#3.2.8<br>jquery=git://github.com/components/jquery.git#1.7.2<br>jquery=git://github.com/components/jquery.git#2.0.3<br>8). 查看D3库信息</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower info d3<br>d3</p>
-<p>  Versions:</p>
-<pre><code>- 3.2.8
-- 3.2.7
-- 3.2.6
-- 3.2.5
-- 3.2.4
-- 3.2.3
-...
-</code></pre><p>9). 查看dojo库的url</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower lookup dojo<br>dojo git://github.com/dojo/dojo.git<br>10). 用浏览器打开dojo的发布主页</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower home dojo<br>bower dojo#<em>                not-cached git://github.com/dojo/dojo.git#</em><br>bower dojo#<em>                   resolve git://github.com/dojo/dojo.git#</em><br>bower dojo#<em>                  download <a href="https://github.com/dojo/dojo/archive/1.9.1.tar.gz" target="_blank" rel="external">https://github.com/dojo/dojo/archive/1.9.1.tar.gz</a><br>bower dojo#</em>                   extract archive.tar.gz<br>bower dojo#*                  resolved git://github.com/dojo/dojo.git#1.9.1<br>浏览器自动打开：<a href="https://github.com/dojo/dojo" target="_blank" rel="external">https://github.com/dojo/dojo</a></p>
-<p>11). 查询包含dojo的类库</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower search dojo<br>Search results:</p>
-<pre><code>dojo git://github.com/dojo/dojo.git
-dojox git://github.com/dojo/dojox.git
-dojo-util git://github.com/dojo/util.git
-dojo-bootstrap git://github.com/samvdb/Dojo-Bootstrap
-</code></pre><p>真是方便实用的技术。</p>
-<ol>
-<li>用bower提交自己类库</li>
-</ol>
-<p>1). 生成bower.json配置文件</p>
-<p>~ D:\workspace\javascript\nodejs-bower&gt;bower init<br>bower existing      The existing bower.json file will be used and filled in<br>[?] name: nodejs-bower<br>[?] version: 0.0.0<br>[?] main file:<br>[?] set currently installed components as dependencies? No<br>[?] add commonly ignored files to ignore list? Yes<br>查看生成的文件bower.json</p>
-<p>{<br>  “name”: “nodejs-bower”,<br>  “version”: “0.0.0”,<br>  “ignore”: [<br>    “<em>*/.</em>“,<br>    “node_modules”,<br>    “bower_components”,<br>    “test”,<br>    “tests”<br>  ],<br>  “dependencies”: {<br>    “d3”: “git://github.com/mbostock/d3.git#~3.2.8”,<br>    “jquery”: “git://github.com/components/jquery.git#~2.0.3”<br>  }<br>}</p>
-<ol>
-<li>在github创建一个资源库：nodejs-bower</li>
-<li>本地工程绑定github</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;git init</span><br><span class="line">Initialized empty Git repository in D:/workspace/javascript/nodejs-bower/.git/</span><br><span class="line"></span><br><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;git add .</span><br><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;git commit -m &quot;first commit&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># On branch master</span><br><span class="line">#</span><br><span class="line"># Initial commit</span><br><span class="line">#</span><br><span class="line"># Untracked files:</span><br><span class="line">#   (use &quot;git add ...&quot; to include in what will be committed)</span><br><span class="line">#</span><br><span class="line">#       app.js</span><br><span class="line">#       bower.json</span><br><span class="line">#       bower_components/</span><br><span class="line">#       node_modules/</span><br><span class="line">#       package.json</span><br><span class="line">#       public/</span><br><span class="line">#       routes/</span><br><span class="line">#       views/</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line"></span><br><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;git remote add origin https://github.com/bsspirit/nodejs-bower</span><br><span class="line"></span><br><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;git push -u origin master</span><br><span class="line">Counting objects: 565, done.</span><br><span class="line">Delta compression using up to 4 threads.</span><br><span class="line">Compressing objects: 100% (516/516), done.</span><br><span class="line">Writing objects: 100% (565/565), 803.08 KiB, done.</span><br><span class="line">Total 565 (delta 26), reused 0 (delta 0)</span><br><span class="line">To https://github.com/bsspirit/nodejs-bower</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch master set up to track remote branch master from origin.</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>注册到bower官方类库</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">~ D:\workspace\javascript\nodejs-bower&gt;bower register nodejs-bower git@github.com:bsspirit/nodejs-bower.git</span><br><span class="line">bower                          convert Converted git@github.com:bsspirit/nodejs-bower.git to git://github.com/bsspirit/n</span><br><span class="line">odejs-bower.git</span><br><span class="line">bower nodejs-bower#*           resolve git://github.com/bsspirit/nodejs-bower.git#*</span><br><span class="line">bower nodejs-bower#*          checkout master</span><br><span class="line">bower nodejs-bower#*          resolved git://github.com/bsspirit/nodejs-bower.git#af3ceaac07</span><br><span class="line">Registering a package will make it visible and installable via the registry (https://bower.herokuapp.com), continue? (y/</span><br><span class="line">n)                    y</span><br><span class="line">bower nodejs-bower            register git://github.com/bsspirit/nodejs-bower.git</span><br><span class="line"></span><br><span class="line">Package nodejs-bower registered successfully!</span><br><span class="line">All valid semver tags on git://github.com/bsspirit/nodejs-bower.git will be available as versions.</span><br><span class="line">To publish a new version, you just need release a valid semver tag.</span><br><span class="line"></span><br><span class="line">Run bower info nodejs-bower to list the package versions.</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询我们自己的包</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">D:\workspace\javascript\nodejs-bower&gt;bower search nodejs-bower</span><br><span class="line"></span><br><span class="line">Search results:nodejs-bower</span><br><span class="line">git://github.com/bsspirit/nodejs-bower.git</span><br></pre></td></tr></table></figure>
-<ol>
-<li>安装我们自己的包</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">D:\workspace\javascript\nodejs-bower&gt;bower install nodejs-bower</span><br><span class="line">bower nodejs-bower#*            cached git://github.com/bsspirit/nodejs-bower.git#af3ceaac07</span><br><span class="line">bower nodejs-bower#*          validate af3ceaac07 against git://github.com/bsspirit/nodejs-bower.git#*</span><br><span class="line">bower nodejs-bower#*           install nodejs-bower#af3ceaac07</span><br><span class="line"></span><br><span class="line">nodejs-bower#af3ceaac07 bower_components\nodejs-bower</span><br><span class="line">├── d3#3.2.8</span><br><span class="line">└── jquery#2.0.3</span><br></pre></td></tr></table></figure>
 
       
     </div>
