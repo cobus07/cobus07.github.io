@@ -24,10 +24,18 @@
     </entry>
     
     <entry>
-      <title></title>
-      <url>http://17sunny.cn/2016/07/23/bower%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p><strong>包管理是个复杂的问题，我们要知道谁依赖谁，还要明确哪个版本依赖哪个版本。</strong></p>
+      <title><![CDATA[firstChild和firstElementChild的区别]]></title>
+      <url>http://17sunny.cn/2016/07/07/first##%E5%92%8CfirstElement##%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      <content type="html"><![CDATA[<p>（1）.它们的共同点都是获取父节点下第一个节点对象。<br>（2）.但是firstElementChild只会获取元素节点对象，从名称就可以看出来，firstChild则可以获取文本节点对象（当然也可以获取元素节点对象），比如空格和换行都被当做文本节点。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bower学习笔记]]></title>
+      <url>http://17sunny.cn/2016/02/03/bower%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>包管理是个复杂的问题，我们要知道谁依赖谁，还要明确哪个版本依赖哪个版本。</p>
 <p>Bower 是 twitter 推出的一款包管理工具，基于nodejs的模块化思想，把功能分散到各个模块中，让模块和模块之间存在联系，通过 Bower 来管理模块间的这种联系。</p>
+<a id="more"></a>
 <p><strong>包管理工具一般有以下的功能：</strong></p>
 <ol>
 <li>注册机制：每个包需要确定一个唯一的 ID 使得搜索和下载的时候能够正确匹配，所以包管理工具需要维护注册信息，可以依赖其他平台。</li>
@@ -56,17 +64,11 @@
     </entry>
     
     <entry>
-      <title><![CDATA[firstChild和firstElementChild的区别]]></title>
-      <url>http://17sunny.cn/2016/07/07/first##%E5%92%8CfirstElement##%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-      <content type="html"><![CDATA[<p>（1）.它们的共同点都是获取父节点下第一个节点对象。<br>（2）.但是firstElementChild只会获取元素节点对象，从名称就可以看出来，firstChild则可以获取文本节点对象（当然也可以获取元素节点对象），比如空格和换行都被当做文本节点。</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[高性能CSS3优化]]></title>
       <url>http://17sunny.cn/2016/02/03/%E9%AB%98%E6%80%A7%E8%83%BDCSS3%E4%BC%98%E5%8C%96/</url>
       <content type="html"><![CDATA[<p>注：本文出自腾讯AlloyTeam的元彦。</p>
 <p>高性能移动Web相较PC的场景需要考虑的因素也相对更多更复杂，我们总结为以下几点： 流量、功耗与流畅度。 在PC时代我们更多的是考虑体验上的流畅度，而在Mobile端本身丰富的场景下，需要额外关注对用户基站网络流量使用的情况，设备耗电量的情况。</p>
+<a id="more"></a>
 <p>关于流畅度，主要体现在前端动画中，在现有的前端动画体系中，通常有两种模式：JS动画与CSS3动画。 JS动画是通过JS动态改写样式实现动画能力的一种方案，在PC端兼容低端浏览器中不失为一种推荐方案。<br>而在移动端，我们选择性能更优浏览器原生实现方案：CSS3动画。</p>
 <p>然而，CSS3动画在移动多终端设备场景下，相比PC会面对更多的性能问题，主要体现在动画的卡顿与闪烁。</p>
 <p>目前对提升移动端CSS3动画体验的主要方法有几点：</p>
@@ -191,7 +193,9 @@ void Document::updateLayoutIgnorePendingStylesheets()
     <entry>
       <title><![CDATA[堆排序及代码实现]]></title>
       <url>http://17sunny.cn/2016/01/11/heapSort/</url>
-      <content type="html"><![CDATA[<p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。<br>因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数组。<br>根据完全二叉树的定义可以知道，一个完全二叉树的左右子节点的键值分别是 父节点键值<em>2 和 父节点键值</em>2+1 ，但是由于数组的下标是从0开始的，所以以此数组构成的完全二叉树的左右子节点的下标分别是 父节点的下标<em>2+1 与 父节点的下标</em>2+2。<br>下面是JS的大根堆排序实现：<br>    javascript</p>
+      <content type="html"><![CDATA[<p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。</p>
+<a id="more"></a>
+<p>因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数组。<br>根据完全二叉树的定义可以知道，一个完全二叉树的左右子节点的键值分别是 父节点键值<em>2 和 父节点键值</em>2+1 ，但是由于数组的下标是从0开始的，所以以此数组构成的完全二叉树的左右子节点的下标分别是 父节点的下标<em>2+1 与 父节点的下标</em>2+2。<br>下面是JS的大根堆排序实现：<br>    javascript</p>
 <pre><code>    rray.prototype.heapAdjust=function(i,j){
         var  nChild;
         for(;2*i+1&lt;j;i=nChild){
@@ -232,7 +236,7 @@ a.heapSort();
     </entry>
     
     <entry>
-      <title><![CDATA[是该捡一捡了 看百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
+      <title><![CDATA[百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
       <url>http://17sunny.cn/2016/01/11/%E6%98%AF%E8%AF%A5%E6%8D%A1%E4%B8%80%E6%8D%A1%E4%BA%86/</url>
       <content type="html"><![CDATA[<p>先占个坑~</p>
 ]]></content>
@@ -244,6 +248,7 @@ a.heapSort();
       <content type="html"><![CDATA[<p>冒泡排序（bubble sort）O（n^2）</p>
 <p>鸡尾酒排序（Cocktail sort，双向的冒泡排序）—O（n^2）</p>
 <p>插入排序（insertion sort）O（n^2）</p>
+<a id="more"></a>
 <p>桶排序（bucket sort）O（n）;需要O（k）额外空间</p>
 <p>计数排序（counting sort） O（n+k）;需要O（n+k）额外空间</p>
 <p>合并排序（merge sort） O（nlog n）;需要O（n）额外空间</p>
@@ -276,6 +281,7 @@ a.heapSort();
       <title><![CDATA[快排及代码实现]]></title>
       <url>http://17sunny.cn/2015/11/02/quicksort/</url>
       <content type="html"><![CDATA[<h3 id="快速排序（Quicksort）是对冒泡排序的一种改进。"><a href="#快速排序（Quicksort）是对冒泡排序的一种改进。" class="headerlink" title="快速排序（Quicksort）是对冒泡排序的一种改进。"></a>快速排序（Quicksort）是对冒泡排序的一种改进。</h3><p>快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。</p>
+<a id="more"></a>
 <p>设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面，所有比它大的数都放到它后面，这个过程称为一趟快速排序。值得注意的是，快速排序不是一种稳定的排序算法，也就是说，多个相同的值的相对位置也许会在算法结束时产生变动。</p>
 <h3 id="主要实现方法"><a href="#主要实现方法" class="headerlink" title="主要实现方法:"></a>主要实现方法:</h3><p>1.设置两个变量i、j，排序开始的时候：i=0，j=N-1；<br>2.以第一个数组元素作为关键数据，赋值给key，即key=A[0]；<br>3.从j开始向前搜索，即由后开始向前搜索(j–)，找到第一个小于key的值A[j]，将A[j]和A[i]互换；<br>4.从i开始向后搜索，即由前开始向后搜索(i++)，找到第一个大于key的A[i]，将A[i]和A[j]互换；<br>5.重复第3、4步，直到i=j； (3,4步中，没找到符合条件的值，即3中A[j]不小于key,4中A[i]不大于key的时候改变j、i的值，使得j=j-1，i=i+1，直至找到为止。找到符合条件的值，进行交换的时候i， j指针位置不变。另外，i==j这一过程一定正好是i+或j-完成的时候，此时令循环结束）。</p>
 <p>快速排序<br>JavaScript实现:</p>
@@ -319,6 +325,7 @@ a.heapSort();
 <p>你还可以用通过在canvas上作图来实现动画，</p>
 <p>也可以借助jQuery动画相关的API方便地实现;</p>
 <p>当然最原始的你还可以使用window.setTimout()或者window.setInterval()通过不断更新元素的状态位置等来实现动画，前提是画面的更新频率要达到每秒60次才能让肉眼看到流畅的动画效果。</p>
+<a id="more"></a>
 <p>现在又多了一种实现动画的方案，那就是还在草案当中的window.requestAnimationFrame()方法。</p>
 <h3 id="初识requestAnimationFrame"><a href="#初识requestAnimationFrame" class="headerlink" title="初识requestAnimationFrame"></a><em>初识requestAnimationFrame</em></h3><p>MDN上对其给出的诠释：</p>
 <p>The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes as an argument a callback to be invoked before the repaint.</p>

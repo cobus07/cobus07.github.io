@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="快速排序 排序," />
+  <meta name="keywords" content="排序,快速排序," />
 
 
 
@@ -102,19 +102,16 @@
 
 
 
-<meta name="description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。
-设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面">
+<meta name="description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快排及代码实现">
 <meta property="og:url" content="http://17sunny.cn/2015/11/02/quicksort/index.html">
 <meta property="og:site_name" content="cobus's website">
-<meta property="og:description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。
-设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面">
-<meta property="og:updated_time" content="2016-04-11T05:55:22.211Z">
+<meta property="og:description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。">
+<meta property="og:updated_time" content="2016-08-24T15:56:22.743Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快排及代码实现">
-<meta name="twitter:description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。
-设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面">
+<meta name="twitter:description" content="快速排序（Quicksort）是对冒泡排序的一种改进。快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。">
 
 
 
@@ -305,7 +302,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-常见排序 " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -352,6 +349,11 @@
           
 
           
+              &nbsp; | &nbsp;
+              <span class="page-pv">本文总阅读量
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
         </div>
       </header>
     
@@ -364,6 +366,7 @@
 
       
         <h3 id="快速排序（Quicksort）是对冒泡排序的一种改进。"><a href="#快速排序（Quicksort）是对冒泡排序的一种改进。" class="headerlink" title="快速排序（Quicksort）是对冒泡排序的一种改进。"></a>快速排序（Quicksort）是对冒泡排序的一种改进。</h3><p>快速排序的基本思想就是首先把整个数组分成两部分，其中一部分比另外一部分中所有的值都要大，然后再把这两部分分别按照这个方法再分成一大一小两部分，一直递归下去直到每部分只有一个值，这样就能使整个数组的数值有序排列。</p>
+<a id="more"></a>
 <p>设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它前面，所有比它大的数都放到它后面，这个过程称为一趟快速排序。值得注意的是，快速排序不是一种稳定的排序算法，也就是说，多个相同的值的相对位置也许会在算法结束时产生变动。</p>
 <h3 id="主要实现方法"><a href="#主要实现方法" class="headerlink" title="主要实现方法:"></a>主要实现方法:</h3><p>1.设置两个变量i、j，排序开始的时候：i=0，j=N-1；<br>2.以第一个数组元素作为关键数据，赋值给key，即key=A[0]；<br>3.从j开始向前搜索，即由后开始向前搜索(j–)，找到第一个小于key的值A[j]，将A[j]和A[i]互换；<br>4.从i开始向后搜索，即由前开始向后搜索(i++)，找到第一个大于key的A[i]，将A[i]和A[j]互换；<br>5.重复第3、4步，直到i=j； (3,4步中，没找到符合条件的值，即3中A[j]不小于key,4中A[i]不大于key的时候改变j、i的值，使得j=j-1，i=i+1，直至找到为止。找到符合条件的值，进行交换的时候i， j指针位置不变。另外，i==j这一过程一定正好是i+或j-完成的时候，此时令循环结束）。</p>
 <p>快速排序<br>JavaScript实现:</p>
@@ -422,7 +425,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/快速排序-排序/" rel="tag">#快速排序 排序</a>
+            <a href="/tags/排序/" rel="tag">#排序</a>
+          
+            <a href="/tags/快速排序/" rel="tag">#快速排序</a>
           
         </div>
       
@@ -546,7 +551,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -665,6 +670,22 @@
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">本站访问客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人次</span>
+  
+
+  
+    <span class="site-pv">本站访问总量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
 
         
       </div>

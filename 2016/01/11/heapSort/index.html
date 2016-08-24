@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="算法 排序," />
+  <meta name="keywords" content="算法,排序," />
 
 
 
@@ -102,16 +102,16 @@
 
 
 
-<meta name="description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数">
+<meta name="description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="堆排序及代码实现">
 <meta property="og:url" content="http://17sunny.cn/2016/01/11/heapSort/index.html">
 <meta property="og:site_name" content="cobus's website">
-<meta property="og:description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数">
-<meta property="og:updated_time" content="2016-04-11T05:54:37.092Z">
+<meta property="og:description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。">
+<meta property="og:updated_time" content="2016-08-24T15:56:31.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="堆排序及代码实现">
-<meta name="twitter:description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数">
+<meta name="twitter:description" content="堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。">
 
 
 
@@ -302,7 +302,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-计算机基础 " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -349,6 +349,11 @@
           
 
           
+              &nbsp; | &nbsp;
+              <span class="page-pv">本文总阅读量
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
         </div>
       </header>
     
@@ -360,7 +365,9 @@
       
 
       
-        <p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。<br>因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数组。<br>根据完全二叉树的定义可以知道，一个完全二叉树的左右子节点的键值分别是 父节点键值<em>2 和 父节点键值</em>2+1 ，但是由于数组的下标是从0开始的，所以以此数组构成的完全二叉树的左右子节点的下标分别是 父节点的下标<em>2+1 与 父节点的下标</em>2+2。<br>下面是JS的大根堆排序实现：<br>    javascript</p>
+        <p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。</p>
+<a id="more"></a>
+<p>因此根据大根堆或者小根堆的性质就可以循环的从最后一个值开始与堆顶的值进行调换，调换之后再对从倒数第二个开始向前的所有值进行调整堆，把堆顶的值放到倒数第二个的位置，依此类推，最后的数组就会变成一个有序的数组。<br>根据完全二叉树的定义可以知道，一个完全二叉树的左右子节点的键值分别是 父节点键值<em>2 和 父节点键值</em>2+1 ，但是由于数组的下标是从0开始的，所以以此数组构成的完全二叉树的左右子节点的下标分别是 父节点的下标<em>2+1 与 父节点的下标</em>2+2。<br>下面是JS的大根堆排序实现：<br>    javascript</p>
 <pre><code>    rray.prototype.heapAdjust=function(i,j){
         var  nChild;
         for(;2*i+1&lt;j;i=nChild){
@@ -424,7 +431,9 @@ a.heapSort();
       
         <div class="post-tags">
           
-            <a href="/tags/算法-排序/" rel="tag">#算法 排序</a>
+            <a href="/tags/算法/" rel="tag">#算法</a>
+          
+            <a href="/tags/排序/" rel="tag">#排序</a>
           
         </div>
       
@@ -433,8 +442,8 @@ a.heapSort();
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/11/是该捡一捡了/" rel="next" title="是该捡一捡了 看百度前端技术学院参考资料 整理一下hasLayout BFC">
-                <i class="fa fa-chevron-left"></i> 是该捡一捡了 看百度前端技术学院参考资料 整理一下hasLayout BFC
+              <a href="/2016/01/11/是该捡一捡了/" rel="next" title="百度前端技术学院参考资料 整理一下hasLayout BFC">
+                <i class="fa fa-chevron-left"></i> 百度前端技术学院参考资料 整理一下hasLayout BFC
               </a>
             
           </div>
@@ -548,7 +557,7 @@ a.heapSort();
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -667,6 +676,22 @@ a.heapSort();
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">本站访问客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人次</span>
+  
+
+  
+    <span class="site-pv">本站访问总量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
 
         
       </div>
