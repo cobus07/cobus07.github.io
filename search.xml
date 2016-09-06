@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[匠心]]></title>
+      <url>http://17sunny.cn/2016/09/06/%E5%B0%8F%E4%BC%A4%E6%84%9F/</url>
+      <content type="html"><![CDATA[<p>在家里笔记本屏幕太小，没公司的爽，周末就来公司了。</p>
+<p>昨天刷微博的时候，看到大牛们都去参加 Ning JsConf 了，当我发现时已经晚了。。刚刚知道有这么好的大会，来年一定参加！<br>知乎上有一个关于2016 Ning JsConf 大会的问题，不停地再刷，生怕自己错过什么有趣的事情。现在5点多了，为期两天的大会也快结束了。心里竟然伤感了起来。。。正好还被蚊子咬了两口，左手一个包，右手一个包（公司竟然有蚊子了？！）。</p>
+<p>那天加了公司的一个乒乓球群，晚上下班一起约球，被狠狠地虐了一晚上。会然感觉得到社交的重要性，要多多与他人交流，不要固步自封，这样才能打开你的眼界，这样才能成长。</p>
+<p>愿我保持一颗匠心，加油！</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[实习]]></title>
       <url>http://17sunny.cn/2016/08/13/%E6%9C%80%E8%BF%91/</url>
       <content type="html"><![CDATA[<p>说一下上篇没写的但是想说的，平时无论是做项目还是别的在过程中遇到的一些问题以及解决方案，要及时的总结，要不然你总会忘记的。</p>
@@ -191,6 +201,13 @@ void Document::updateLayoutIgnorePendingStylesheets()
     </entry>
     
     <entry>
+      <title><![CDATA[百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
+      <url>http://17sunny.cn/2016/01/11/%E6%98%AF%E8%AF%A5%E6%8D%A1%E4%B8%80%E6%8D%A1%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>先占个坑~</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[堆排序及代码实现]]></title>
       <url>http://17sunny.cn/2016/01/11/heapSort/</url>
       <content type="html"><![CDATA[<p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。</p>
@@ -233,13 +250,6 @@ var  a=new  Array();
 [].push.apply(a,[56,23,89,41,27,63,9,6,125,214]);
 a.heapSort();
 </code></pre>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
-      <url>http://17sunny.cn/2016/01/11/%E6%98%AF%E8%AF%A5%E6%8D%A1%E4%B8%80%E6%8D%A1%E4%BA%86/</url>
-      <content type="html"><![CDATA[<p>先占个坑~</p>
-]]></content>
     </entry>
     
     <entry>
