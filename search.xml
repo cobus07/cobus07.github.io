@@ -66,39 +66,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[bower学习笔记]]></title>
-      <url>http://17sunny.cn/2016/02/03/bower%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p>包管理是个复杂的问题，我们要知道谁依赖谁，还要明确哪个版本依赖哪个版本。</p>
-<p>Bower 是 twitter 推出的一款包管理工具，基于nodejs的模块化思想，把功能分散到各个模块中，让模块和模块之间存在联系，通过 Bower 来管理模块间的这种联系。</p>
-<a id="more"></a>
-<p><strong>包管理工具一般有以下的功能：</strong></p>
-<ol>
-<li>注册机制：每个包需要确定一个唯一的 ID 使得搜索和下载的时候能够正确匹配，所以包管理工具需要维护注册信息，可以依赖其他平台。</li>
-<li>文件存储：确定文件存放的位置，下载的时候可以找到，当然这个地址在网络上是可访问的。</li>
-<li>上传下载：这是工具的主要功能，能提高包使用的便利性。比如想用 jquery 只需要 install 一下就可以了，不用到处找下载。上传并不是必备的，根据文件存储的位置而定，但需要有一定的机制保障。</li>
-<li>依赖分析：这也是包管理工具主要解决的问题之一，既然包之间是有联系的，那么下载的时候就需要处理他们之间的依赖。下载一个包的时候也需要下载依赖的包。</li>
-</ol>
-<p><strong>列出了bower支持的各种命令</strong></p>
-<ol>
-<li>cache:bower缓存管理</li>
-<li>help:显示Bower命令的帮助信息</li>
-<li>home:通过浏览器打开一个包的github发布页</li>
-<li>info:查看包的信息</li>
-<li>init:创建bower.json文件</li>
-<li>install:安装包到项目</li>
-<li>link:在本地bower库建立一个项目链接</li>
-<li>list:列出项目已安装的包</li>
-<li>lookup:根据包名查询包的URL</li>
-<li>prune:删除项目无关的包</li>
-<li>register:注册一个包</li>
-<li>search:搜索包</li>
-<li>update:更新项目的包</li>
-<li>uninstall:删除项目的包</li>
-</ol>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[高性能CSS3优化]]></title>
       <url>http://17sunny.cn/2016/02/03/%E9%AB%98%E6%80%A7%E8%83%BDCSS3%E4%BC%98%E5%8C%96/</url>
       <content type="html"><![CDATA[<p>注：本文出自腾讯AlloyTeam的元彦。</p>
@@ -222,6 +189,39 @@ void Document::updateLayoutIgnorePendingStylesheets()
 <p>SVGTextContent: getCharNumAtPosition(), getComputedTextLength(), getEndPositionOfChar(), getExtentOfChar(), getNumberOfChars(), getRotationOfChar(), getStartPositionOfChar(), getSubStringLength(), selectSubString()</p>
 <p>SVGUse: instanceRoot</p>
 <p>window: getComputedStyle(), scrollBy(), scrollTo(), scrollX, scrollY, webkitConvertPointFromNodeToPage(), webkitConvertPointFromPageToNode()</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bower学习笔记]]></title>
+      <url>http://17sunny.cn/2016/02/03/bower%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>包管理是个复杂的问题，我们要知道谁依赖谁，还要明确哪个版本依赖哪个版本。</p>
+<p>Bower 是 twitter 推出的一款包管理工具，基于nodejs的模块化思想，把功能分散到各个模块中，让模块和模块之间存在联系，通过 Bower 来管理模块间的这种联系。</p>
+<a id="more"></a>
+<p><strong>包管理工具一般有以下的功能：</strong></p>
+<ol>
+<li>注册机制：每个包需要确定一个唯一的 ID 使得搜索和下载的时候能够正确匹配，所以包管理工具需要维护注册信息，可以依赖其他平台。</li>
+<li>文件存储：确定文件存放的位置，下载的时候可以找到，当然这个地址在网络上是可访问的。</li>
+<li>上传下载：这是工具的主要功能，能提高包使用的便利性。比如想用 jquery 只需要 install 一下就可以了，不用到处找下载。上传并不是必备的，根据文件存储的位置而定，但需要有一定的机制保障。</li>
+<li>依赖分析：这也是包管理工具主要解决的问题之一，既然包之间是有联系的，那么下载的时候就需要处理他们之间的依赖。下载一个包的时候也需要下载依赖的包。</li>
+</ol>
+<p><strong>列出了bower支持的各种命令</strong></p>
+<ol>
+<li>cache:bower缓存管理</li>
+<li>help:显示Bower命令的帮助信息</li>
+<li>home:通过浏览器打开一个包的github发布页</li>
+<li>info:查看包的信息</li>
+<li>init:创建bower.json文件</li>
+<li>install:安装包到项目</li>
+<li>link:在本地bower库建立一个项目链接</li>
+<li>list:列出项目已安装的包</li>
+<li>lookup:根据包名查询包的URL</li>
+<li>prune:删除项目无关的包</li>
+<li>register:注册一个包</li>
+<li>search:搜索包</li>
+<li>update:更新项目的包</li>
+<li>uninstall:删除项目的包</li>
+</ol>
 ]]></content>
     </entry>
     
