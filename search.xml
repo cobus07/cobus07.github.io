@@ -226,13 +226,6 @@ void Document::updateLayoutIgnorePendingStylesheets()
     </entry>
     
     <entry>
-      <title><![CDATA[百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
-      <url>http://17sunny.cn/2016/01/11/%E6%98%AF%E8%AF%A5%E6%8D%A1%E4%B8%80%E6%8D%A1%E4%BA%86/</url>
-      <content type="html"><![CDATA[<p>先占个坑~</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[堆排序及代码实现]]></title>
       <url>http://17sunny.cn/2016/01/11/heapSort/</url>
       <content type="html"><![CDATA[<p>堆排序是是选择排序的一种，分为大根堆和小根堆两种，都是完全二叉树。大根堆要求子节点的值不大于父节点的值，所以堆顶的值一定是最大的，小根堆就和大根堆相反，自己的的值不小于父节点，堆顶的值一定是最小的。</p>
@@ -275,6 +268,13 @@ var  a=new  Array();
 [].push.apply(a,[56,23,89,41,27,63,9,6,125,214]);
 a.heapSort();
 </code></pre>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[百度前端技术学院参考资料 整理一下hasLayout BFC]]></title>
+      <url>http://17sunny.cn/2016/01/11/%E6%98%AF%E8%AF%A5%E6%8D%A1%E4%B8%80%E6%8D%A1%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>先占个坑~</p>
+]]></content>
     </entry>
     
     <entry>
